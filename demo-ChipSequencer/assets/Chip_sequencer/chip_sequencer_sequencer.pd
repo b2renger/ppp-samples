@@ -1,0 +1,125 @@
+#N canvas 65 92 1086 686 10;
+#X obj 55 440 cnv 15 100 115 empty cursorAccents empty 20 12 0 14 -261234
+-66577 0;
+#X obj 55 555 cnv 15 100 115 empty cursorOctaves empty 20 12 0 14 -261234
+-66577 0;
+#X obj 55 2 cnv 15 100 290 empty cursorNotes empty 20 12 0 14 -261234
+-66577 0;
+#N canvas 65 87 450 250 (subpatch) 0;
+#X array Notes 8 float 3;
+#A 0 9 7 8 8 7 7 6 5;
+#X coords 0 0 8 12 800 260 2 0 0;
+#X restore 54 23 graph;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array Octaves 8 float 3;
+#A 0 2 1 2 2 2 2 2 2;
+#X coords 0 0 8 2 800 85 1 0 0;
+#X restore 55 568 graph;
+#N canvas 65 82 450 250 (subpatch) 0;
+#X array Accents 8 float 3;
+#A 0 1 0 2 2 2 2 2 2;
+#X coords 0 0 8 2 800 85 1 0 0;
+#X restore 55 449 graph;
+#X obj 38 239 cnv 15 815 1 empty empty +2 -20 0 0 14 -162280 -66577
+0;
+#X obj 38 196 cnv 15 815 1 empty empty +4 -20 0 0 14 -162280 -66577
+0;
+#X obj 38 174 cnv 15 815 1 empty empty +5 -20 0 0 14 -162280 -66577
+0;
+#X obj 38 131 cnv 15 815 1 empty empty +7 -20 0 0 14 -162280 -66577
+0;
+#X obj 38 88 cnv 15 815 1 empty empty +9 -20 0 0 14 -162280 -66577
+0;
+#X obj 38 44 cnv 15 815 1 empty empty +11 -25 0 0 14 -162280 -66577
+0;
+#X obj 38 261 cnv 15 815 1 empty empty empty -10 0 0 14 -228856 -66577
+0;
+#X obj 38 218 cnv 15 815 1 empty empty empty -10 0 0 14 -228856 -66577
+0;
+#X obj 38 152 cnv 15 815 1 empty empty empty -10 0 0 14 -228856 -66577
+0;
+#X obj 38 109 cnv 15 815 1 empty empty empty -10 0 0 14 -228856 -66577
+0;
+#X obj 38 66 cnv 15 815 1 empty empty empty -10 0 0 14 -228856 -66577
+0;
+#X obj 40 653 cnv 15 815 1 empty empty 0 -10 0 0 14 -162280 -66577
+0;
+#X obj 39 610 cnv 15 815 1 empty empty 1 -10 0 0 14 -162280 -66577
+0;
+#X obj 39 568 cnv 15 815 1 empty empty 2 -10 0 0 14 -162280 -66577
+0;
+#X obj 38 22 cnv 15 815 1 empty empty +12 -25 0 0 14 -162280 -66577
+0;
+#X obj 39 283 cnv 15 815 1 empty empty +0 -20 0 0 14 -162280 -66577
+0;
+#X obj 40 534 cnv 15 815 1 empty empty mute -35 0 0 14 -162280 -66577
+0;
+#X obj 39 449 cnv 15 815 1 empty empty hard -35 0 0 14 -162280 -66577
+0;
+#X obj 945 194 nbx 5 25 0 12 0 0 modulonotes.s modulonotes.r Modulo
+0 -8 0 10 -262144 -1 -1 8 256;
+#X obj 945 239 nbx 5 25 0 12 0 0 dephasenotes.s dephasenotes.r Dephase
+0 -8 0 10 -262144 -1 -1 0 256;
+#X obj 945 573 nbx 5 25 0 12 0 0 modulooctaves.s modulooctaves.r Modulo
+0 -8 0 10 -262144 -1 -1 8 256;
+#X obj 945 618 nbx 5 25 0 12 0 0 dephaseoctaves.s dephaseoctaves.r
+Dephase 0 -8 0 10 -262144 -1 -1 0 256;
+#X obj 945 463 nbx 5 25 0 12 0 0 moduloaccents.s moduloaccents.r Modulo
+0 -8 0 10 -262144 -1 -1 8 256;
+#X obj 945 508 nbx 5 25 0 12 0 0 dephaseaccents.s dephaseaccents.r
+Dephase 0 -8 0 10 -262144 -1 -1 0 256;
+#X obj 872 179 vradio 35 1 0 3 modenotes.s modenotes.r empty 0 -8 0
+10 -262144 -1 -1 0;
+#X text 903 185 >>;
+#X text 902 224 <<;
+#X text 902 261 ><;
+#X obj 874 557 vradio 35 1 0 3 modeoctaves.s modeoctaves.r empty 0
+-8 0 10 -262144 -1 -1 0;
+#X text 905 563 >>;
+#X text 904 602 <<;
+#X text 904 635 ><;
+#X obj 873 442 vradio 35 1 0 3 modeaccents.s modeaccents.r empty 0
+-8 0 10 -262144 -1 -1 0;
+#X text 904 448 >>;
+#X text 903 487 <<;
+#X text 903 524 ><;
+#X obj 866 22 bng 25 250 50 0 load_pattern empty Load_Patt 0 -10 0
+10 -262144 -1 -1;
+#X obj 933 22 bng 25 250 50 0 save_pattern empty Save_Patt 0 -10 0
+10 -262144 -1 -1;
+#X obj 1001 22 bng 25 250 50 0 reset_pattern empty Reset_Patt 0 -10
+0 10 -262144 -1 -1;
+#X obj 40 491 cnv 15 815 1 empty empty med -35 0 0 14 -162280 -66577
+0;
+#X obj 872 60 taplist 35 35 basenote1.r basenote1.s basenote1 C C#
+D Eb E F F# G Ab A Bb B;
+#X obj 870 119 hradio 35 1 0 5 baseoctave.s baseoctave.r Octave 0 -8
+0 14 -262144 -1 -1 1;
+#X obj 931 61 nbx 4 35 0 127 0 0 basenote.s basenote.r empty 0 -8 0
+10 -262144 -1 -1 36 256;
+#X obj 555 290 cnv 15 100 150 empty cursorDurations empty 20 12 0 14
+-261234 -66577 0;
+#N canvas 65 82 450 250 (subpatch) 0;
+#X array Durations 8 float 3;
+#A 0 4 3 2 1 0 1 2 3;
+#X coords 0 0 8 4 800 125 1 0 0;
+#X restore 54 302 graph;
+#X obj 39 426 cnv 15 815 1 empty empty *0.5 -35 0 0 14 -162280 -66577
+0;
+#X obj 38 394 cnv 15 815 1 empty empty *1 -35 0 0 14 -162280 -66577
+0;
+#X obj 38 333 cnv 15 815 1 empty empty *3 -35 0 0 14 -162280 -66577
+0;
+#X obj 944 343 nbx 5 25 0 12 0 0 modulodurations.s modulodurations.r
+Modulo 0 -8 0 10 -262144 -1 -1 8 256;
+#X obj 944 388 nbx 5 25 0 12 0 0 dephasedurations.s dephasedurations.r
+Dephase 0 -8 0 10 -262144 -1 -1 5 256;
+#X obj 872 322 vradio 35 1 0 3 modedurations.s modedurations.r empty
+0 -8 0 10 -262144 -1 -1 0;
+#X text 903 328 >>;
+#X text 902 367 <<;
+#X text 902 404 ><;
+#X obj 39 364 cnv 15 815 1 empty empty *2 -35 0 0 14 -162280 -66577
+0;
+#X obj 38 302 cnv 15 815 1 empty empty *4 -35 0 0 14 -162280 -66577
+0;
