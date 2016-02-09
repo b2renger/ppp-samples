@@ -1,9 +1,11 @@
-#N canvas 86 82 939 379 10;
+#N canvas 83 87 939 379 10;
 #X declare -path ../../../../pd-party/droidparty-abstractions;
+#X declare -path ../../../../ppp-release/PdPartyPublisher-0.1.1/puredata/
+;
 #X obj 9 90 hsl 128 25 0 32 0 0 num1.s num1.r Numerator 5 12 0 10 -262144
--1 -1 900 1;
+-1 -1 0 1;
 #X obj 9 124 hsl 128 25 0 32 0 0 den1.s den1.r Denominator 5 12 0 10
--262144 -1 -1 3000 1;
+-262144 -1 -1 0 1;
 #X obj 6 57 tgl 25 0 glitch1.s glitch1.r Glitch_1 30 12 0 10 -262144
 -1 -1 0 1;
 #N canvas 789 151 1301 714 guts 0;
@@ -592,37 +594,37 @@ right \, random);
 #X connect 110 0 109 1;
 #X restore 6 323 pd guts;
 #X obj 158 91 hsl 128 25 0 32 0 0 num2.s num2.r Numerator 5 12 0 10
--262144 -1 -1 1600 1;
+-262144 -1 -1 0 1;
 #X obj 158 125 hsl 128 25 0 32 0 0 den2.s den2.r Denominator 5 12 0
-10 -262144 -1 -1 4200 1;
+10 -262144 -1 -1 0 1;
 #X obj 155 58 tgl 25 0 glitch2.s glitch2.r Glitch_2 30 12 0 10 -262144
 -1 -1 0 1;
 #X obj 306 91 hsl 128 25 0 32 0 0 num3.s num3.r Numerator 5 12 0 10
--262144 -1 -1 2600 1;
+-262144 -1 -1 0 1;
 #X obj 306 125 hsl 128 25 0 32 0 0 den3.s den3.r Denominator 5 12 0
-10 -262144 -1 -1 5000 1;
+10 -262144 -1 -1 0 1;
 #X obj 303 58 tgl 25 0 glitch3.s glitch3.r Glitch_3 30 12 0 10 -262144
 -1 -1 0 1;
 #X obj 452 92 hsl 128 25 0 32 0 0 num4.s num4.r Numerator 5 12 0 10
--262144 -1 -1 1700 1;
+-262144 -1 -1 0 1;
 #X obj 452 126 hsl 128 25 0 32 0 0 den4.s den4.r Denominator 5 12 0
-10 -262144 -1 -1 7700 1;
+10 -262144 -1 -1 0 1;
 #X obj 449 59 tgl 25 0 glitch4.s glitch4.r Glitch_4 30 12 0 10 -262144
 -1 -1 0 1;
 #X obj 601 93 hsl 128 25 0 32 0 0 num5.s num5.r Numerator 5 12 0 10
--262144 -1 -1 6700 1;
+-262144 -1 -1 0 1;
 #X obj 601 127 hsl 128 25 0 32 0 0 den5.s den5.r Denominator 5 12 0
-10 -262144 -1 -1 9000 1;
+10 -262144 -1 -1 0 1;
 #X obj 598 60 tgl 25 0 glitch5.s glitch5.r Glitch_5 30 12 0 10 -262144
 -1 -1 0 1;
 #X obj 749 93 hsl 128 25 0 32 0 0 num6.s num6.r Numerator 5 12 0 10
--262144 -1 -1 2100 1;
+-262144 -1 -1 0 1;
 #X obj 749 127 hsl 128 25 0 32 0 0 den6.s den6.r Denominator 5 12 0
-10 -262144 -1 -1 8600 1;
+10 -262144 -1 -1 0 1;
 #X obj 746 60 tgl 25 0 glitch6.s glitch6.r Glitch_6 30 12 0 10 -262144
 -1 -1 0 1;
 #X obj 8 345 clock-gui;
-#N canvas 700 107 651 686 loadsave 1;
+#N canvas 697 82 651 686 loadsave 1;
 #X obj 7 10 persist-map storage glitch1.s glitch1.r;
 #X obj 7 31 persist-map storage num1.s num1.r;
 #X obj 7 52 persist-map storage den1.s den1.r;
@@ -670,9 +672,9 @@ right \, random);
 #X obj 6 159 hradio 33 1 0 4 panner1_mode.s panner1_mode.r empty 0
 -8 0 10 -262144 -1 -1 3;
 #X obj 6 203 hsl 128 25 2 20 0 0 g1_tone.s g1_tone.r Tone 5 12 0 10
--262144 -1 -1 3400 1;
+-262144 -1 -1 0 1;
 #X obj 6 240 hsl 128 25 10 100 0 0 g1_decay.s g1_decay.r Decay 5 12
-0 10 -262144 -1 -1 3300 1;
+0 10 -262144 -1 -1 0 1;
 #X obj 156 159 hradio 33 1 0 4 panner2_mode.s panner2_mode.r empty
 0 -8 0 10 -262144 -1 -1 0;
 #X obj 303 158 hradio 33 1 0 4 panner3_mode.s panner3_mode.r empty
@@ -683,3 +685,5 @@ right \, random);
 0 -8 0 10 -262144 -1 -1 3;
 #X obj 747 161 hradio 33 1 0 4 panner6_mode.s panner6_mode.r empty
 0 -8 0 10 -262144 -1 -1 3;
+#X obj 404 349 declare -path ../../../../ppp-release/PdPartyPublisher-0.1.1/puredata/
+;

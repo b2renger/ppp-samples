@@ -1,9 +1,7 @@
-#N canvas 452 311 659 356 10;
-#X declare -path ../../../../pd-party/droidparty-abstractions;
-#N canvas 66 278 625 392 core 0;
-#X obj 34 15 declare -path ../../../../pd-party/droidparty-abstractions
+#N canvas 449 316 659 356 10;
+#X declare -path ../../../../ppp-release/PdPartyPublisher-0.1.1/puredata/
 ;
-#X obj 403 16 clock-gui;
+#N canvas 65 283 625 392 core 1;
 #N canvas 66 84 450 300 clock 0;
 #X obj 74 60 clock, f 10;
 #X obj 74 148 / 24;
@@ -462,15 +460,18 @@
 1 \; scale3.r 3 \; length3.r 1 \; fm.r 100 \; fmo.r 3 \; am.r 3 \;
 delay-scale.r 2 \; feedback.r 0.2 \; master.r 0.5 \; modulus.r 5 \;
 ;
+#X obj 36 17 declare -path ../../../../ppp-release/PdPartyPublisher-0.1.1/puredata/
+;
+#X obj 403 16 clock-gui;
+#X connect 0 0 1 0;
+#X connect 0 1 6 1;
+#X connect 1 0 2 0;
 #X connect 2 0 3 0;
-#X connect 2 1 8 1;
-#X connect 3 0 4 0;
-#X connect 4 0 5 0;
-#X connect 5 0 8 0;
-#X connect 6 0 5 1;
-#X connect 8 0 9 0;
-#X connect 8 1 9 1;
-#X connect 10 0 13 0;
+#X connect 3 0 6 0;
+#X connect 4 0 3 1;
+#X connect 6 0 7 0;
+#X connect 6 1 7 1;
+#X connect 8 0 11 0;
 #X restore 323 94 pd core;
 #X obj 450 19 hradio 32 1 0 6 subdiv subdiv.r empty 0 -8 0 10 -262144
 -1 -1 4;

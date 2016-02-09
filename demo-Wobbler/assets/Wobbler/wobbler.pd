@@ -1,6 +1,7 @@
-#N canvas 370 204 532 510 10;
+#N canvas 367 209 532 510 10;
 #X declare -path ./rj;
-#X declare -path ../../../../pd-party/droidparty-abstractions;
+#X declare -path ../../../../ppp-release/PdPartyPublisher-0.1.1/puredata/
+;
 #X obj 32 187 hsl 250 25 0 1 0 1 glide.s glide.r GLIDE 0 -6 1 10 -262144
 -1 -4160 0 1;
 #X obj 33 229 hsl 250 50 0 1 0 1 tone.s tone.r TONE 0 -6 1 10 -262144
@@ -9,7 +10,7 @@
 -1 -4160 1 1;
 #X obj 29 24 tgl 25 1 bass.s bass.r BASS 0 -10 1 10 -262144 -1 -4160
 1 1;
-#N canvas 670 391 450 300 guts 0;
+#N canvas 667 396 450 300 guts 0;
 #N canvas 66 131 1301 554 BASS 0;
 #X obj 19 271 osc~;
 #X obj 19 252 +~;
@@ -698,11 +699,11 @@
 #X text 44 197 based on dubstep_bass pd patch by Joe White;
 #X text 40 229 + de vitesse dans les pattern lfo;
 #X text 39 254 3 synthés noise;
-#X obj 34 15 declare -path ../../../../pd-party/droidparty-abstractions
+#X obj 5 -6 declare -path ../../../../ppp-release/PdPartyPublisher-0.1.1/puredata/
 ;
 #X connect 2 0 0 0;
 #X restore 620 37 pd guts;
-#X obj 620 116 clock-gui;
+#X obj 620 118 clock-gui;
 #N canvas 699 292 613 463 loadsave-interface 0;
 #X obj 44 15 s cb-save;
 #X obj 44 -6 r storage-save;

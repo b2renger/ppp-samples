@@ -1,6 +1,7 @@
-#N canvas 79 195 637 400 10;
-#X declare -path ../../../../puredata;
-#N canvas 156 87 650 686 audiocore 1;
+#N canvas 73 205 637 400 10;
+#X declare -path ../../../../ppp-release/PdPartyPublisher-0.1.1/puredata/
+;
+#N canvas 150 97 650 686 audiocore 0;
 #X obj 74 0 clock;
 #X obj 49 60 select 0;
 #X obj 49 38 mod 24;
@@ -364,7 +365,6 @@ harm_0_7.r 1 \; harm_0_8.r 0 \; phasor-osc-1.r 0.25 \; vcf-freq-1.r
 #X obj 462 271 hsl 128 25 1 50 0 0 vcf-q-1.s vcf-q-1.r empty -2 -8
 0 10 -262144 -1 -1 2333 1;
 #X text 458 255 VCF Resonance;
-#X obj 398 419 declare -path ../../../../puredata;
 #X obj 8 306 hsl 70 70 0 1 0 0 attack-1.s attack-1.r Attack -2 -8 0
 10 -262144 -1 -262144 0 1;
 #X obj 178 306 hsl 70 70 0 1 0 0 decay-1.s decay-1.r Decay -2 -8 0
@@ -372,7 +372,7 @@ harm_0_7.r 1 \; harm_0_8.r 0 \; phasor-osc-1.r 0.25 \; vcf-freq-1.r
 #X obj 93 306 hsl 70 70 0 1 0 0 length-1.s length-1.r Length -2 -8
 0 10 -262144 -1 -262144 0 1;
 #X obj 14 239 hradio 40 1 0 6 notedur-1.s notedur-1.r empty 0 -8 0
-10 -262144 -1 -1 2;
+10 -262144 -1 -1 1;
 #X text 12 239 NOTE DURATION;
 #X obj 462 322 hsl 128 25 0 1 0 0 del-wet-dry.s del-wet-dry.r empty
 -2 -8 0 10 -262144 -1 -1 6350 1;
@@ -425,3 +425,5 @@ Eb E F F# G G#;
 #X text 196 287 DECAY;
 #X text 112 287 LENGTH;
 #X text 269 287 DELAYS - Step multiplications;
+#X obj 183 401 declare -path ../../../../ppp-release/PdPartyPublisher-0.1.1/puredata/
+;

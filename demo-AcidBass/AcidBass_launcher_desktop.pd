@@ -1,12 +1,12 @@
-#N canvas 333 208 450 300 10;
-#X declare -path ../../pd-party/droidparty-abstractions;
+#N canvas 192 244 450 300 10;
 #X declare -path assets/Acid_Bass;
-#X declare -path ../../../../pd-party/droidparty-abstractions;
-#X declare -path ../../../../pd-party/droidparty-abstractions;
-#X obj 5 23 declare -path ../../pd-party/droidparty-abstractions;
-#X obj 4 73 clock-gui;
+#X declare -path ../../ppp-release/PdPartyPublisher-0.1.1/puredata/
+;
 #X obj 5 44 declare -path assets/Acid_Bass;
 #X obj 7 161 AcidBass_noteOptions;
 #X obj 4 111 AcidBass_audioControls;
 #X obj 5 184 AcidBass_noteSelector;
 #X obj 6 134 AcidBass_core;
+#X obj 5 -6 declare -path ../../ppp-release/PdPartyPublisher-0.1.1/puredata/
+;
+#X obj 4 73 clock-gui;
