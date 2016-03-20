@@ -1,7 +1,7 @@
-#N canvas 73 205 637 400 10;
+#N canvas 67 215 637 400 10;
 #X declare -path ../../../../ppp-release/PdPartyPublisher-0.1.1/puredata/
 ;
-#N canvas 150 97 650 686 audiocore 0;
+#N canvas 138 87 883 686 audiocore 0;
 #X obj 74 0 clock;
 #X obj 49 60 select 0;
 #X obj 49 38 mod 24;
@@ -118,7 +118,7 @@
 #X obj 597 278 r note_4.s/idx;
 #X obj 640 302 r octave4.s;
 #X obj 241 56 loadsave bank;
-#N canvas 712 87 650 686 loadsave-mapping 0;
+#N canvas 709 92 650 686 loadsave-mapping 0;
 #X obj 20 40 r load;
 #X obj 21 147 r save;
 #X msg 20 60 \; bank load presets cbs;
@@ -168,24 +168,28 @@
 #X obj 117 1123 dac~;
 #X obj 116 1096 *~;
 #X obj 192 1079 lop~ 10;
-#N canvas 323 100 650 686 init 0;
+#N canvas 308 97 650 686 init 0;
 #X obj 60 24 loadbang;
+#X obj 218 51 delay 50;
 #X msg 43 69 \; note_1.r/idx 4 \; note_2.r/idx 4 \; note_3.r/idx 4
 \; note_4.r/idx 4 \; octave1.r 0 \; octave2.r 1 \; octave3.r 2 \; octave4.r
 1 \; Proba_0_1.r 100 \; Proba_0_2.r 95 \; Proba_0_3.r 90 \; Proba_0_4.r
-100 \; attack-1.r 0 \; length-1.r 0 \; decay-1.r 0.75 \; del1.r 0 \;
-del2.r 0.33 \; del3.r 0.66 \; del4.r 1.33 \; harm_0_1.r 1 \; harm_0_2.r
-0 \; harm_0_3.r 1 \; harm_0_4.r 0 \; harm_0_5.r 1 \; harm_0_6.r 0 \;
-harm_0_7.r 1 \; harm_0_8.r 0 \; phasor-osc-1.r 0.25 \; vcf-freq-1.r
-50 \; vcf-q-1.r 10 \; del-wet-dry.r 0.5 \; master.r 0.5 \; notedur-1.r
-1 \;;
+100 \; harm_0_1.r 1 \; harm_0_2.r 0 \; harm_0_3.r 1 \; harm_0_4.r 0
+\; harm_0_5.r 1 \; harm_0_6.r 0 \; harm_0_7.r 1 \; harm_0_8.r 0 \;
+phasor-osc-1.r 0.25 \; vcf-freq-1.r 50 \; vcf-q-1.r 10 \; del-wet-dry.r
+0.5 \; master.r 0.5 \;;
+#X msg 216 91 \; dt 250 \; notedur-1.r 2 \; attack-1.r 0.05 \; length-1.r
+0.2 \; decay-1.r 0.75 \; del1.r 0 \; del2.r 0.33 \; del3.r 0.66 \;
+del4.r 0.5 \;;
+#X connect 0 0 2 0;
 #X connect 0 0 1 0;
+#X connect 1 0 3 0;
 #X restore 242 110 pd init;
+#X obj 192 1054 r master.s;
 #X obj 137 642 voice;
+#X obj 46 642 voice;
 #X obj 92 642 voice;
 #X obj 1 643 voice;
-#X obj 46 642 voice;
-#X obj 192 1054 r master.s;
 #X connect 0 0 2 0;
 #X connect 0 1 34 0;
 #X connect 1 0 3 0;
@@ -238,10 +242,10 @@ harm_0_7.r 1 \; harm_0_8.r 0 \; phasor-osc-1.r 0.25 \; vcf-freq-1.r
 #X connect 40 1 42 0;
 #X connect 40 2 43 0;
 #X connect 40 3 44 0;
-#X connect 41 0 122 0;
-#X connect 42 0 123 0;
-#X connect 43 0 121 0;
-#X connect 44 0 120 0;
+#X connect 41 0 124 0;
+#X connect 42 0 122 0;
+#X connect 43 0 123 0;
+#X connect 44 0 121 0;
 #X connect 45 0 57 1;
 #X connect 46 0 117 0;
 #X connect 47 0 117 0;
@@ -327,11 +331,11 @@ harm_0_7.r 1 \; harm_0_8.r 0 \; phasor-osc-1.r 0.25 \; vcf-freq-1.r
 #X connect 117 0 116 0;
 #X connect 117 0 116 1;
 #X connect 118 0 117 1;
-#X connect 120 0 31 0;
+#X connect 120 0 118 0;
 #X connect 121 0 31 0;
 #X connect 122 0 31 0;
 #X connect 123 0 31 0;
-#X connect 124 0 118 0;
+#X connect 124 0 31 0;
 #X restore 530 400 pd audiocore;
 #X obj 226 78 hsl 160 30 0 100 0 0 Proba_0_1.s Proba_0_1.r empty -2
 -8 0 10 -262144 -1 -1 15900 1;
@@ -379,7 +383,6 @@ harm_0_7.r 1 \; harm_0_8.r 0 \; phasor-osc-1.r 0.25 \; vcf-freq-1.r
 #X text 457 301 DELAY wet/dry;
 #X obj 279 310 nbx 6 25 -1e+37 1e+37 0 0 del1.s del1.r empty 0 -8 0
 10 -262144 -1 -1 0 256;
-#X text 470 154 OSC VS PHASOR mix;
 #X text 225 61 PROBABILITIES;
 #X obj 16 21 bng 30 250 50 0 load empty empty 17 7 0 10 -262144 -1
 -1;
@@ -415,11 +418,11 @@ Eb E F F# G G#;
 Eb E F F# G G#;
 #X obj 16 196 taplist 30 30 note_4.r note_4.s note_4 A Bb B C C# D
 Eb E F F# G G#;
-#X obj 26 378 nbx 3 14 -1e+37 1e+37 0 0 empty attack-1.s empty 0 -8
+#X obj 13 378 nbx 6 17 -1e+37 1e+37 0 0 empty attack-1.s empty 0 -8
 0 10 -262144 -1 -1 0 256;
-#X obj 115 378 nbx 3 14 -1e+37 1e+37 0 0 empty length-1.s empty 0 -8
+#X obj 98 378 nbx 6 17 -1e+37 1e+37 0 0 empty length-1.s empty 0 -8
 0 10 -262144 -1 -1 0 256;
-#X obj 196 378 nbx 3 14 -1e+37 1e+37 0 0 empty decay-1.s empty 0 -8
+#X obj 182 378 nbx 6 17 -1e+37 1e+37 0 0 empty decay-1.s empty 0 -8
 0 10 -262144 -1 -1 0.75 256;
 #X text 15 286 ATTACK;
 #X text 196 287 DECAY;
@@ -427,3 +430,4 @@ Eb E F F# G G#;
 #X text 269 287 DELAYS - Step multiplications;
 #X obj 183 401 declare -path ../../../../ppp-release/PdPartyPublisher-0.1.1/puredata/
 ;
+#X text 470 154 PHASOR VS OSC mix;

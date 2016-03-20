@@ -24,8 +24,8 @@ public class KnobSlider extends Slider
 		canvas.drawOval(dRect, paint);
 
 		paint.setStyle(Paint.Style.STROKE);
-		paint.setColor(Color.BLACK);
-		paint.setStrokeWidth(1);
+		paint.setColor(fgcolor);
+		paint.setStrokeWidth(3);
 		canvas.drawOval(dRect, paint);
 		
 		float value = (val - min) / (max - min);

@@ -29,9 +29,9 @@ public class Manoury extends Activity {
         
         PdDroidPartyConfig config = new PdDroidPartyConfig();
         
-        config.theme = new MonochromeTheme(MonochromeTheme.ORANGE, true);
+        config.theme = new MonochromeTheme(0xFF908f8f,  0xFF6b6868, 0xFF2d2b2b);
         config.guiKeepAspectRatio = true;
-        
+       
         config.typeOverrides.put(Radio.class, SimpleRadio.class);
         config.typeOverrides.put(Taplist.class, PopupTaplist.class);
         config.typeOverrides.put(Slider.class, RibbonSlider.class);
