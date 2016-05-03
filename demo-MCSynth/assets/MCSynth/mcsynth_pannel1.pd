@@ -1,0 +1,38 @@
+#N canvas 213 120 429 263 10;
+#X obj 8 7 tgl 45 0 c-1 c-1.r empty 17 7 0 10 -262144 -1 -1 0 1;
+#X obj 57 7 tgl 45 0 csharp-1 csharp-1.r empty 17 7 0 10 -262144 -1
+-1 0 1;
+#X obj 106 7 tgl 45 0 d-1 d-1.r empty 17 7 0 10 -262144 -1 -1 0 1;
+#X obj 155 7 tgl 45 0 dsharp-1 dsharp-1.r empty 17 7 0 10 -262144 -1
+-1 0 1;
+#X obj 204 7 tgl 45 0 e-1 e-1.r empty 17 7 0 10 -262144 -1 -1 0 1;
+#X obj 253 7 tgl 45 0 f-1 f-1.r empty 17 7 0 10 -262144 -1 -1 0 1;
+#X obj 8 54 tgl 45 0 fsharp-1 fsharp-1.r empty 17 7 0 10 -262144 -1
+-1 0 1;
+#X obj 57 54 tgl 45 0 g-1 g-1.r empty 17 7 0 10 -262144 -1 -1 0 1;
+#X obj 106 54 tgl 45 0 gsharp-1 gsharp-1.r empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 155 54 tgl 45 0 a-1 a-1.r empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X obj 253 54 tgl 45 0 b-1 b-1.r empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X obj 204 54 tgl 45 0 asharp-1 asharp-1.r empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 237 127 vsl 35 100 0 1 0 0 quantize3 quantize3.r Echo 0 -9 0
+10 -262144 -1 -1 9900 1;
+#X obj 282 127 vsl 35 100 0 95 0 0 reverb3 reverb3.r Rev 0 -9 0 10
+-262144 -1 -1 0 1;
+#X obj 103 120 tgl 30 0 train2 train2.r Learn 35 16 0 10 -262144 -1
+-1 0 1;
+#X obj 104 167 tgl 30 0 markovplay2 markovplay2.r Improvise 35 16 0
+10 -262144 -1 -1 0 1;
+#X obj 10 114 tgl 30 0 loop2 loop2.r Loop 35 16 0 10 -262144 -1 -1
+0 1;
+#X obj 11 153 tgl 30 0 write2 write2.r Write 35 15 0 10 -262144 -1
+-1 0 1;
+#X obj 12 192 tgl 30 0 playback2 playback2.r Play 35 16 0 10 -262144
+-1 -1 0 1;
+#X obj 328 127 vsl 35 100 0 95 0 0 vol3 vol3.r Vol 0 -9 0 10 -262144
+-1 -1 9900 1;
+#X obj 317 12 taplist 60 35 synthpreset.r synthpreset.s synthpreset
+P1 P2 P3 P4 P5 P6 P7 P8 P9;

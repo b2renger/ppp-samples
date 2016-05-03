@@ -1,0 +1,11 @@
+#N canvas 468 287 450 300 10;
+#X declare -path assets/MCSynth;
+#X declare -path ../../ppp-release/PdPartyPublisher-0.1.2/puredata/
+;
+#X declare -path assets/MCSynth/rj;
+#X obj 20 112 clock-gui;
+#X obj 21 71 declare -path assets/MCSynth;
+#X obj 21 33 declare -path ../../ppp-release/PdPartyPublisher-0.1.2/puredata/
+;
+#X obj 21 90 declare -path assets/MCSynth/rj;
+#X obj 21 134 mcsynth_pannel2;
