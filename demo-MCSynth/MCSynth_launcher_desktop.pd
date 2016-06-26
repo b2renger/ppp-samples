@@ -1,4 +1,4 @@
-#N canvas 468 287 450 300 10;
+#N canvas 463 297 450 300 10;
 #X declare -path assets/MCSynth;
 #X declare -path ../../ppp-release/PdPartyPublisher-0.1.2/puredata/
 ;
@@ -9,3 +9,8 @@
 ;
 #X obj 21 90 declare -path assets/MCSynth/rj;
 #X obj 21 134 mcsynth_pannel2;
+#X text 33 177 - save a taptap pattern;
+#X text 34 198 -work on synth sounds;
+#X text 33 224 -transpose ?;
+#X text 34 248 - loop length parameter;
+#X text 34 267 - second pannel ?;
