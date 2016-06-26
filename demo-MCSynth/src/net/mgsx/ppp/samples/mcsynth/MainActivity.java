@@ -23,14 +23,16 @@ public class MainActivity extends Activity {
         
         PdDroidPartyConfig config = new PdDroidPartyConfig();
 
-        config.theme = new MonochromeTheme(0xFF908f8f,  0xFF6b6868, 0xFF2d2b2b);
+        config.theme = new MonochromeTheme(0xFF272308,  0xFF333220, 0xFFFBCB4B);
        
         //config.guiKeepAspectRatio = true;
         
         config.typeOverrides.put(Taplist.class, PopupTaplist.class);
         config.typeOverrides.put(Slider.class, RibbonSlider.class);
-        //config.typeOverrides.put(Bang.class, SimpleBang.class);
-       // config.typeOverrides.put(Toggle.class, FilledToggle.class);
+        config.typeOverrides.put(Bang.class, SimpleBang.class);
+        config.typeOverrides.put(Toggle.class, HexToggle.class);
+        
+        
         
         
        // config.presetsPaths.add("MCSynth/presets_pattern");
