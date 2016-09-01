@@ -1,4 +1,4 @@
-#N canvas 165 202 831 435 10;
+#N canvas 1 619 831 435 10;
 #X obj 137 212 tgl 80 0 c4 c4.r C4 30 40 0 20 -262144 -1 -1 0 1;
 #X obj 137 130 tgl 80 0 c4sharp c4sharp.r Cd4 24 40 0 20 -228856 -1
 -1 0 1;
@@ -15,22 +15,16 @@
 #X obj 137 294 tgl 80 0 b3 b3.r B3 30 40 0 20 -262144 -1 -1 0 1;
 #X obj 74 89 tgl 80 0 a3sharp a3sharp.r Bb3 25 40 0 20 -228856 -1 -1
 0 1;
-#X obj 618 266 tgl 40 0 train1 train1.r MarkovLearn 45 16 0 14 -262144
+#X obj 630 233 tgl 40 0 train1 train1.r MarkovLearn 45 16 0 14 -262144
 -1 -1 0 1;
-#X obj 618 315 tgl 40 0 markovplay1 markovplay1.r MarkovImpro 45 16
+#X obj 630 282 tgl 40 0 markovplay1 markovplay1.r MarkovImpro 45 16
 0 14 -262144 -1 -1 0 1;
-#X obj 618 214 tgl 40 0 loop1 loop1.r PlayLoop 45 16 0 14 -262144 -1
--1 0 1;
-#X obj 618 167 tgl 40 0 write1 write1.r Write2Loop 45 16 0 14 -262144
--1 -1 0 1;
-#X obj 618 121 tgl 40 0 playback1 playback1.r Play 45 16 0 14 -262144
--1 -1 0 1;
-#X obj 618 -16 mcsynth_audiocore;
-#X obj 619 7 taplist 170 35 synthpreset.r synthpreset.s synthpreset
-FB-String-Brass1 Gentle-Sync RoughSync-Bass Thin-Short-Bass Full-Square-Lead
-Dull-Brass Slow-Hollow Slow-Thin Bass-ic;
-#X obj 621 62 hsl 170 40 0 127 0 0 vol2 vol2.r Volume -2 -8 0 14 -262144
--1 -1 13307 1;
+#X obj 630 181 tgl 40 0 loop1 loop1.r PlayLoop 45 16 0 14 -262144 -1
+-1 1 1;
+#X obj 630 134 tgl 40 0 write1 write1.r Write2Loop 45 16 0 14 -262144
+-1 -1 1 1;
+#X obj 630 88 tgl 40 0 playback1 playback1.r Play 45 16 0 14 -262144
+-1 -1 1 1;
 #X obj 199 335 tgl 80 0 d4 d4.r D4 30 40 0 20 -262144 -1 -1 0 1;
 #X obj 199 171 tgl 80 0 e4 e4.r E4 30 40 0 20 -262144 -1 -1 0 1;
 #X obj 199 89 tgl 80 0 f4 f4.r F4 30 40 0 20 -262144 -1 -1 0 1;
@@ -71,5 +65,7 @@ Dull-Brass Slow-Hollow Slow-Thin Bass-ic;
 #X obj 513 130 tgl 80 0 a5sharp a5sharp.r Bb5 24 40 0 20 -228856 -1
 -1 0 1;
 #X obj 513 48 tgl 80 0 b5 b5.r B5 30 40 0 20 -262144 -1 -1 0 1;
-#X obj 619 372 bng 40 250 50 0 reset.s reset.r Reset 45 20 0 14 -262144
+#X obj 631 339 bng 40 250 50 0 reset.s reset.r Reset 45 20 0 14 -262144
 -1 -1;
+#X obj 629 29 hradio 40 1 0 4 octave.s octave.r Octave 0 -8 0 10 -262144
+-1 -1 0;

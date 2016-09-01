@@ -34,13 +34,15 @@ public class MainActivity extends Activity {
         
         
         
-        
+    
+        config.guiPatches.put("Keyboard", "MCSynth/mcsynth_pannel2.pd");
+        config.guiPatches.put("Audio Controls", "MCSynth/mcsynth_synthcontrols.pd");
+        config.corePatches.add("MCSynth/mcsynth_audiocore.pd");
        // config.presetsPaths.add("MCSynth/presets_pattern");
        // config.presetsPaths.add("MCSynth/presets_synth");
        
          
-        PdDroidPartyLauncher.launch(this,"MCSynth/mcsynth_pannel2.pd",config);
-        
+        PdDroidPartyLauncher.launch(this, config);
     }
     
 

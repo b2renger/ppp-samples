@@ -7,6 +7,7 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Region;
 import android.graphics.Paint.Align;
+import android.graphics.Paint.Cap;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.PathShape;
 import android.graphics.drawable.shapes.Shape;
@@ -63,6 +64,7 @@ public class HexToggle extends Toggle
 		
 		paint.setColor(nbgcolor);
 		paint.setStyle(Paint.Style.FILL);
+		paint.setStrokeCap(Cap.ROUND);
 		canvas.drawPath(hexagonPath, paint);
 		
 		//canvas.drawPaint(paint);

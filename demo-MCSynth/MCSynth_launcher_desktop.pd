@@ -1,4 +1,4 @@
-#N canvas 463 297 450 300 10;
+#N canvas 881 179 862 508 10;
 #X declare -path assets/MCSynth;
 #X declare -path ../../ppp-release/PdPartyPublisher-0.1.2/puredata/
 ;
@@ -8,9 +8,15 @@
 #X obj 21 33 declare -path ../../ppp-release/PdPartyPublisher-0.1.2/puredata/
 ;
 #X obj 21 90 declare -path assets/MCSynth/rj;
-#X obj 21 134 mcsynth_pannel2;
-#X text 33 177 - save a taptap pattern;
-#X text 34 198 -work on synth sounds;
-#X text 33 224 -transpose ?;
-#X text 34 248 - loop length parameter;
-#X text 34 267 - second pannel ?;
+#X obj 20 131 mcsynth_pannel2;
+#X obj 20 169 mcsynth_audiocore;
+#X obj 20 150 mcsynth_synthcontrols;
+#X text 21 224 - save a taptap pattern dump and load are available
+;
+#X text 22 245 - save custom synths;
+#X text 21 314 -transpose ? should be possible midi vs audio => passer
+les notes du mode piano vers le mode loop avant l'application de l'octave
+=> un seul write et un seul spigot combiné à l'entée => un select
+qui route vers les taptap => plus de 3eme ni de 4eme argument pour
+les taps taps => on ré-applique l'octave => il faut aussi l'appliquer
+dans le sous-patch markov;
