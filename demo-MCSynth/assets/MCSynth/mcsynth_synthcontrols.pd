@@ -1,34 +1,34 @@
-#N canvas 62 105 663 477 10;
-#X obj 25 58 hsl 170 40 0 1 0 0 env3a-amp-attack.s env3a-amp-attack.r
+#N canvas 62 105 662 426 10;
+#X obj 25 86 hsl 170 40 0 1 0 0 env3a-amp-attack.s env3a-amp-attack.r
 AMP-ATTACK -2 -8 0 10 -228992 -1 -262144 3300 1;
-#X obj 25 114 hsl 128 25 0 1 0 0 env3d-amp-decay.s env3d-amp-decay.r
+#X obj 25 149 hsl 170 40 0 1 0 0 env3d-amp-decay.s env3d-amp-decay.r
 AMP-DECAY -2 -8 0 10 -228992 -1 -262144 4000 1;
-#X obj 25 154 hsl 128 25 0 1 0 0 env3s-amp-sustain.s env3s-amp-sustain.r
+#X obj 25 212 hsl 170 40 0 1 0 0 env3s-amp-sustain.s env3s-amp-sustain.r
 AMP-SUS -2 -8 0 10 -228992 -1 -262144 2000 1;
-#X obj 26 193 hsl 128 25 0 1 0 0 env3r-amp-release.s env3r-amp-release.r
+#X obj 25 277 hsl 170 40 0 1 0 0 env3r-amp-release.s env3r-amp-release.r
 AMP-REL -2 -8 0 10 -228992 -1 -262144 1700 1;
-#X obj 233 59 hsl 128 25 0 1 0 0 osc1a.s osc1a.r OSC1-PW -2 -8 0 10
+#X obj 246 86 hsl 170 40 0 1 0 0 osc1a.s osc1a.r OSC1-PW -2 -8 0 10
 -228992 -1 -262144 11000 1;
-#X obj 234 101 hsl 128 25 0 1 0 0 osc1b.s osc1b.r OSC2-PW -2 -8 0 10
+#X obj 246 149 hsl 170 40 0 1 0 0 osc1b.s osc1b.r OSC2-PW -2 -8 0 10
 -228992 -1 -262144 7800 1;
-#X obj 234 141 hsl 128 25 0 1 0 0 osc1c.s osc1c.r OSC1-PWM -2 -8 0
+#X obj 246 212 hsl 170 40 0 1 0 0 osc1c.s osc1c.r OSC1-PWM -2 -8 0
 10 -228992 -1 -262144 3900 1;
-#X obj 235 181 hsl 128 25 0 1 0 0 osc1d.s osc1d.r OSC2-PWM -2 -8 0
+#X obj 246 277 hsl 170 40 0 1 0 0 osc1d.s osc1d.r OSC2-PWM -2 -8 0
 10 -228992 -1 -262144 4800 1;
-#X obj 450 59 hsl 128 25 0 1 0 0 mod1a.s mod1a.r FILTER-AMT -2 -8 0
+#X obj 466 86 hsl 170 40 0 1 0 0 mod1a.s mod1a.r FILTER-AMT -2 -8 0
 10 -228992 -1 -262144 1700 1;
-#X obj 451 100 hsl 128 25 0 1 0 0 mod1b.s mod1b.r DETUNE -2 -8 0 10
+#X obj 466 149 hsl 170 40 0 1 0 0 mod1b.s mod1b.r DETUNE -2 -8 0 10
 -228992 -1 -262144 2500 1;
-#X obj 451 140 hsl 128 25 0 1 0 0 mod1c.s mod1c.r SYNC-AMT -2 -8 0
+#X obj 466 212 hsl 170 40 0 1 0 0 mod1c.s mod1c.r SYNC-AMT -2 -8 0
 10 -228992 -1 -262144 1600 1;
-#X obj 451 182 hsl 128 25 0 1 0 0 mod3d.s mod3d.r VOLME -2 -8 0 10
+#X obj 466 277 hsl 170 40 0 1 0 0 mod3d.s mod3d.r VOLME -2 -8 0 10
 -228992 -1 -262144 2100 1;
-#X obj 34 287 hsl 170 40 0 127 0 0 vol2 vol2.r Master_Volume -2 -8
+#X obj 25 346 hsl 170 40 0 100 0 0 vol2 vol2.r Master_Volume -2 -8
 0 14 -262144 -1 -1 13307 1;
-#X obj 22 6 taplist 170 35 synthpreset.r synthpreset.s synthpreset
+#X obj 22 20 taplist 170 35 synthpreset.r synthpreset.s synthpreset
 FB-String-Brass1 Gentle-Sync RoughSync-Bass Thin-Short-Bass Dull-Brass
 Slow-Hollow Slow-Thin Bass-ic;
-#N canvas 1 81 450 300 misc_gui 1;
+#N canvas 1 81 450 300 misc_gui 0;
 #X obj 28 47 hsl 128 25 0 1 0 0 env1a-tone-attack.s env1a-tone-attack.r
 TONE-ATTACK -2 -8 0 10 -228992 -1 -262144 0 1;
 #X obj 29 87 hsl 128 25 0 1 0 0 env1d-tone-decay.s env1d-tone-decay.r
@@ -45,5 +45,5 @@ WIDTH-DECAY -2 -8 0 10 -228992 -1 -262144 0 1;
 WIDTH-SUS -2 -8 0 10 -228992 -1 -262144 0 1;
 #X obj 187 164 hsl 128 25 0 1 0 0 env2r-width-release.s env2r-width-release.r
 WIDTH-REL -2 -8 0 10 -228992 -1 -262144 0 1;
-#X restore 219 309 pd misc_gui;
-#X text 21 -12 Factory_sounds;
+#X restore 210 368 pd misc_gui;
+#X text 21 2 Factory_sounds;
