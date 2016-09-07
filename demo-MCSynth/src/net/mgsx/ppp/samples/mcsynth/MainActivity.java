@@ -10,9 +10,10 @@ import net.mgsx.ppp.widget.custom.PopupTaplist;
 import net.mgsx.ppp.widget.core.Slider;
 import net.mgsx.ppp.widget.custom.RibbonSlider;
 import net.mgsx.ppp.widget.core.Bang;
+import net.mgsx.ppp.widget.core.Radio;
 import net.mgsx.ppp.widget.custom.SimpleBang;
 import net.mgsx.ppp.widget.core.Toggle;
-import net.mgsx.ppp.widget.custom.FilledToggle;
+import net.mgsx.ppp.widget.custom.SimpleRadio;
 
 
 public class MainActivity extends Activity {
@@ -31,15 +32,17 @@ public class MainActivity extends Activity {
         config.typeOverrides.put(Slider.class, RibbonSlider.class);
         config.typeOverrides.put(Bang.class, SimpleBang.class);
         config.typeOverrides.put(Toggle.class, HexToggle.class);
+        config.typeOverrides.put(Radio.class, SimpleRadio.class);
         
         
         
-    
-        config.guiPatches.put("Keyboard", "MCSynth/mcsynth_pannel2.pd");
-        config.guiPatches.put("Audio Controls", "MCSynth/mcsynth_synthcontrols.pd");
+        config.guiPatches.put("Keyboard1", "MCSynth/mcsynth_pannel1.pd");
+        config.guiPatches.put("Keyboard2", "MCSynth/mcsynth_pannel2.pd");
+        config.guiPatches.put("Controls", "MCSynth/mcsynth_synthcontrols.pd");
         config.corePatches.add("MCSynth/mcsynth_audiocore.pd");
-       // config.presetsPaths.add("MCSynth/presets_pattern");
-       // config.presetsPaths.add("MCSynth/presets_synth");
+        
+        config.presetsPaths.add("MCSynth/presets");
+       
        
          
         PdDroidPartyLauncher.launch(this, config);

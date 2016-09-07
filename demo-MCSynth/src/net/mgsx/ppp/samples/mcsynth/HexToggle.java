@@ -5,12 +5,8 @@ import net.mgsx.ppp.widget.core.Toggle;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
-import android.graphics.Region;
 import android.graphics.Paint.Align;
 import android.graphics.Paint.Cap;
-import android.graphics.drawable.ShapeDrawable;
-import android.graphics.drawable.shapes.PathShape;
-import android.graphics.drawable.shapes.Shape;
 
 
 /**
@@ -21,7 +17,7 @@ public class HexToggle extends Toggle
 	protected float cursorX, px;
 	protected int pid = -1;
 	private Path hexagonPath;
-	private ShapeDrawable d;
+	//private ShapeDrawable d;
 	int nbgcolor, nfgcolor , nlabelcolor;
 
 	public HexToggle(PdDroidPatchView app, String[] atomline) {
@@ -37,8 +33,8 @@ public class HexToggle extends Toggle
 		 hexagonPath.lineTo(dRect.left + dRect.width()/4, dRect.top);
 		 hexagonPath.moveTo(dRect.left + dRect.width()/4, dRect.top);
 		 
-		 Shape s = new PathShape(hexagonPath, dRect.width(), dRect.height());
-		 ShapeDrawable d = new ShapeDrawable(s);
+		// Shape s = new PathShape(hexagonPath, dRect.width(), dRect.height());
+		 //ShapeDrawable d = new ShapeDrawable(s);
 		 
 		 if(atomline[9].length() == 3){
 			 nbgcolor = 0xFF765A33;

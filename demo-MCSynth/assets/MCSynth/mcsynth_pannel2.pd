@@ -1,71 +1,103 @@
-#N canvas 1 619 831 435 10;
-#X obj 137 212 tgl 80 0 c4 c4.r C4 30 40 0 20 -262144 -1 -1 0 1;
-#X obj 137 130 tgl 80 0 c4sharp c4sharp.r Cd4 24 40 0 20 -228856 -1
--1 0 1;
-#X obj 199 253 tgl 80 0 d4sharp d4sharp.r Eb4 24 40 0 20 -228856 -1
--1 0 1;
-#X obj 13 294 tgl 80 0 e3 e3.r E3 30 40 0 20 -262144 -1 -1 0 1;
-#X obj 13 212 tgl 80 0 f3 f3.r F3 24 40 0 20 -262144 -1 -1 0 1;
-#X obj 12 130 tgl 80 0 f3sharp f3sharp.r Fd3 24 40 0 20 -228856 -1
--1 0 1;
-#X obj 75 335 tgl 80 0 g3 g3.r G3 30 40 0 20 -262144 -1 -1 0 1;
-#X obj 75 253 tgl 80 0 g3sharp g3sharp.r Ab3 24 40 0 20 -228856 -1
--1 0 1;
-#X obj 75 171 tgl 80 0 a3 a3.r A3 30 40 0 20 -262144 -1 -1 0 1;
-#X obj 137 294 tgl 80 0 b3 b3.r B3 30 40 0 20 -262144 -1 -1 0 1;
-#X obj 74 89 tgl 80 0 a3sharp a3sharp.r Bb3 25 40 0 20 -228856 -1 -1
+#N canvas 861 415 793 501 10;
+#X obj 12 46 tgl 80 0 d6sharp d6sharp.r Eb6 24 40 0 20 -228856 -1 -1
 0 1;
-#X obj 630 233 tgl 40 0 train1 train1.r MarkovLearn 45 16 0 14 -262144
+#X obj 12 128 tgl 80 0 d6 d6.r D6 30 40 0 20 -262144 -1 -1 0 1;
+#X obj 12 210 tgl 80 0 c6sharp c6sharp.r Cd6 24 40 0 20 -228856 -1
+-1 0 1;
+#X obj 12 292 tgl 80 0 c6-1 c6-1.r C6 30 40 0 20 -262144 -1 -1 0 1
+;
+#X obj 12 374 tgl 80 0 b5 b5.r B5 30 40 0 20 -262144 -1 -1 0 1;
+#X obj 75 250 tgl 80 0 e6 e6.r E6 30 40 0 20 -262144 -1 -1 0 1;
+#X obj 75 168 tgl 80 0 f6 f6.r F6 24 40 0 20 -262144 -1 -1 0 1;
+#X obj 74 4 tgl 80 0 g6 g6.r G6 30 40 0 20 -262144 -1 -1 0 1;
+#X obj 74 86 tgl 80 0 f6sharp f6sharp.r Fd6 24 40 0 20 -228856 -1 -1
+0 1;
+#X obj 75 333 tgl 80 0 d6sharp-1 d6sharp-1.r Eb6 24 40 0 20 -228856
 -1 -1 0 1;
-#X obj 630 282 tgl 40 0 markovplay1 markovplay1.r MarkovImpro 45 16
-0 14 -262144 -1 -1 0 1;
-#X obj 630 181 tgl 40 0 loop1 loop1.r PlayLoop 45 16 0 14 -262144 -1
--1 1 1;
-#X obj 630 134 tgl 40 0 write1 write1.r Write2Loop 45 16 0 14 -262144
--1 -1 1 1;
-#X obj 630 88 tgl 40 0 playback1 playback1.r Play 45 16 0 14 -262144
--1 -1 1 1;
-#X obj 199 335 tgl 80 0 d4 d4.r D4 30 40 0 20 -262144 -1 -1 0 1;
-#X obj 199 171 tgl 80 0 e4 e4.r E4 30 40 0 20 -262144 -1 -1 0 1;
-#X obj 199 89 tgl 80 0 f4 f4.r F4 30 40 0 20 -262144 -1 -1 0 1;
-#X obj 11 48 tgl 80 0 g3 g3.r G3 30 40 0 20 -262144 -1 -1 0 1;
-#X obj 137 48 tgl 80 0 d4 d4.r D4 30 40 0 20 -262144 -1 -1 0 1;
-#X obj 74 7 tgl 80 0 b3 b3.r B3 30 40 0 20 -262144 -1 -1 0 1;
-#X obj 199 7 tgl 80 0 f4sharp f4sharp.r Fd4 24 40 0 20 -228856 -1 -1
+#X obj 137 293 tgl 80 0 g6-1 g6-1.r G6 30 40 0 20 -262144 -1 -1 0 1
+;
+#X obj 137 211 tgl 80 0 g6sharp g6sharp.r Ab6 24 40 0 20 -228856 -1
+-1 0 1;
+#X obj 137 129 tgl 80 0 a6 a6.r A6 30 40 0 20 -262144 -1 -1 0 1;
+#X obj 136 47 tgl 80 0 a6sharp a6sharp.r Bb6 25 40 0 20 -228856 -1
+-1 0 1;
+#X obj 138 376 tgl 80 0 f6sharp-1 f6sharp-1.r Fd6 24 40 0 20 -228856
+-1 -1 0 1;
+#X obj 200 170 tgl 80 0 c7 c7.r C7 30 40 0 20 -262144 -1 -1 0 1;
+#X obj 200 88 tgl 80 0 c7sharp c7sharp.r Cd7 24 40 0 20 -228856 -1
+-1 0 1;
+#X obj 200 252 tgl 80 0 b7 b7.r B7 30 40 0 20 -262144 -1 -1 0 1;
+#X obj 200 6 tgl 80 0 d7 d7.r D7 30 40 0 20 -262144 -1 -1 0 1;
+#X obj 201 334 tgl 80 0 a7sharp a7sharp.r Bb7 24 40 0 20 -228856 -1
+-1 0 1;
+#X obj 264 211 tgl 80 0 d7sharp d7sharp.r Eb7 24 40 0 20 -228856 -1
+-1 0 1;
+#X obj 264 293 tgl 80 0 d7-1 d7-1.r D7 30 40 0 20 -262144 -1 -1 0 1
+;
+#X obj 264 129 tgl 80 0 e7 e7.r E7 30 40 0 20 -262144 -1 -1 0 1;
+#X obj 264 47 tgl 80 0 f7 f7.r F7 30 40 0 20 -262144 -1 -1 0 1;
+#X obj 264 375 tgl 80 0 c7sharp-1 c7sharp-1.r Cd7 24 40 0 20 -228856
+-1 -1 0 1;
+#X obj 327 5 tgl 80 0 a7 a7.r A7 30 40 0 20 -262144 -1 -1 0 1;
+#X obj 327 87 tgl 80 0 g7sharp g7sharp.r Ab7 24 40 0 20 -228856 -1
+-1 0 1;
+#X obj 327 169 tgl 80 0 g7 g7.r G7 30 40 0 20 -262144 -1 -1 0 1;
+#X obj 327 251 tgl 80 0 f7sharp f7sharp.r Fd7 24 40 0 20 -228856 -1
+-1 0 1;
+#X obj 326 333 tgl 80 0 f7-1 f7-1.r F7 24 40 0 20 -262144 -1 -1 0 1
+;
+#X obj 388 48 tgl 80 0 c8 c8.r C8 30 40 0 20 -262144 -1 -1 0 1;
+#X obj 388 130 tgl 80 0 b7-1 b7-1.r B7 30 40 0 20 -262144 -1 -1 0 1
+;
+#X obj 388 212 tgl 80 0 a7sharp-1 a7sharp-1.r Bb7 24 40 0 20 -228856
+-1 -1 0 1;
+#X obj 388 294 tgl 80 0 a7-1 a7-1.r A7 30 40 0 20 -262144 -1 -1 0 1
+;
+#X obj 388 377 tgl 80 0 g7sharp-1 g7sharp-1.r Ab7 24 40 0 20 -228856
+-1 -1 0 1;
+#X obj 447 4 tgl 80 0 e8 e8.r E8 30 40 0 20 -262144 -1 -1 0 1;
+#X obj 447 86 tgl 80 0 d8sharp d8sharp.r Eb8 24 40 0 20 -228856 -1
+-1 0 1;
+#X obj 447 168 tgl 80 0 d8 d8.r D8 30 40 0 20 -262144 -1 -1 0 1;
+#X obj 447 250 tgl 80 0 c7sharp-2 c7sharp-2.r Cd7 24 40 0 20 -228856
+-1 -1 0 1;
+#X obj 510 291 tgl 80 0 e8-1 e8-1.r E8 30 40 0 20 -262144 -1 -1 0 1
+;
+#X obj 510 209 tgl 80 0 f8 f8.r F8 30 40 0 20 -262144 -1 -1 0 1;
+#X obj 510 127 tgl 80 0 f8sharp f8sharp.r Fd8 24 40 0 20 -228856 -1
+-1 0 1;
+#X obj 510 45 tgl 80 0 g8 g8.r G8 30 40 0 20 -262144 -1 -1 0 1;
+#X obj 573 250 tgl 80 0 g8sharp g8sharp.r Ab8 24 40 0 20 -228856 -1
+-1 0 1;
+#X obj 573 168 tgl 80 0 a8 a8.r A8 30 40 0 20 -262144 -1 -1 0 1;
+#X obj 573 86 tgl 80 0 a8sharp a8sharp.r Bb8 24 40 0 20 -228856 -1
+-1 0 1;
+#X obj 573 4 tgl 80 0 b8 b8.r B8 30 40 0 20 -262144 -1 -1 0 1;
+#X obj 634 47 tgl 80 0 d9 d9.r D9 30 40 0 20 -262144 -1 -1 0 1;
+#X obj 634 129 tgl 80 0 c9sharp c9sharp.r Cd9 24 40 0 20 -228856 -1
+-1 0 1;
+#X obj 633 211 tgl 80 0 c9 c9.r C9 30 40 0 20 -262144 -1 -1 0 1;
+#X obj 633 293 tgl 80 0 b8-1 b8-1.r B8 30 40 0 20 -262144 -1 -1 0 1
+;
+#X obj 572 333 tgl 80 0 g8-1 g8-1.r G8 30 40 0 20 -262144 -1 -1 0 1
+;
+#X obj 446 333 tgl 80 0 c7-1 c7-1.r C7 30 40 0 20 -262144 -1 -1 0 1
+;
+#X obj 634 375 tgl 80 0 a8sharp-1 a8sharp-1.r Bb8 24 40 0 20 -228856
+-1 -1 0 1;
+#X obj 505 374 tgl 80 0 d8sharp-1 d8sharp-1.r Eb8 24 40 0 20 -228856
+-1 -1 0 1;
+#X obj 696 251 tgl 80 0 d9sharp d9sharp.r Eb9 24 40 0 20 -228856 -1
+-1 0 1;
+#X obj 696 333 tgl 80 0 d9-1 d9-1.r D9 30 40 0 20 -262144 -1 -1 0 1
+;
+#X obj 696 169 tgl 80 0 e9 e9.r E9 30 40 0 20 -262144 -1 -1 0 1;
+#X obj 696 87 tgl 80 0 f9 f9.r F9 30 40 0 20 -262144 -1 -1 0 1;
+#X obj 696 5 tgl 80 0 f9sharp f9sharp.r Fd9 24 40 0 20 -228856 -1 -1
 0 1;
-#X obj 262 48 tgl 80 0 a4 a4.r A4 30 40 0 20 -262144 -1 -1 0 1;
-#X obj 262 130 tgl 80 0 g4sharp g4sharp.r Ab4 24 40 0 20 -228856 -1
--1 0 1;
-#X obj 262 212 tgl 80 0 g4 g4.r G4 30 40 0 20 -262144 -1 -1 0 1;
-#X obj 262 294 tgl 80 0 f4sharp f4sharp.r Fd4 24 40 0 20 -228856 -1
--1 0 1;
-#X obj 324 7 tgl 80 0 c5sharp c5sharp.r Cd5 24 40 0 20 -228856 -1 -1
-0 1;
-#X obj 324 89 tgl 80 0 c5 c5.r C5 30 40 0 20 -262144 -1 -1 0 1;
-#X obj 324 171 tgl 80 0 b4 b4.r B4 30 40 0 20 -262144 -1 -1 0 1;
-#X obj 324 253 tgl 80 0 a4sharp a4sharp.r Bb4 24 40 0 20 -228856 -1
--1 0 1;
-#X obj 324 335 tgl 80 0 a4 a4.r A4 30 40 0 20 -262144 -1 -1 0 1;
-#X obj 387 48 tgl 80 0 e5 e5.r E5 30 40 0 20 -262144 -1 -1 0 1;
-#X obj 387 130 tgl 80 0 d5sharp d5sharp.r Eb5 24 40 0 20 -228856 -1
--1 0 1;
-#X obj 387 212 tgl 80 0 d5 d5.r D5 30 40 0 20 -262144 -1 -1 0 1;
-#X obj 387 294 tgl 80 0 c5sharp c5sharp.r Cd4 24 40 0 20 -228856 -1
--1 0 1;
-#X obj 450 335 tgl 80 0 e5 e5.r E5 30 40 0 20 -262144 -1 -1 0 1;
-#X obj 450 253 tgl 80 0 f5 f5.r F5 30 40 0 20 -262144 -1 -1 0 1;
-#X obj 450 171 tgl 80 0 f5sharp f5sharp.r Fd5 24 40 0 20 -228856 -1
--1 0 1;
-#X obj 450 89 tgl 80 0 g5 g5.r G5 30 40 0 20 -262144 -1 -1 0 1;
-#X obj 450 7 tgl 80 0 g5sharp g5sharp.r Ab5 25 40 0 20 -228856 -1 -1
-0 1;
-#X obj 513 294 tgl 80 0 g5sharp g5sharp.r Ab5 24 40 0 20 -228856 -1
--1 0 1;
-#X obj 513 212 tgl 80 0 a5 a5.r A5 30 40 0 20 -262144 -1 -1 0 1;
-#X obj 513 130 tgl 80 0 a5sharp a5sharp.r Bb5 24 40 0 20 -228856 -1
--1 0 1;
-#X obj 513 48 tgl 80 0 b5 b5.r B5 30 40 0 20 -262144 -1 -1 0 1;
-#X obj 631 339 bng 40 250 50 0 reset.s reset.r Reset 45 20 0 14 -262144
--1 -1;
-#X obj 629 29 hradio 40 1 0 4 octave.s octave.r Octave 0 -8 0 10 -262144
+#X obj 128 463 hradio 35 1 0 16 dzdazi step empty 0 -8 0 10 -262144
 -1 -1 0;
+#X text 129 465 1;
+#X text 270 464 5;
+#X text 409 464 9;
+#X text 513 464 13;
