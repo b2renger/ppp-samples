@@ -1,4 +1,4 @@
-#N canvas 65 142 807 502 10;
+#N canvas 63 146 807 502 10;
 #X obj 267 212 tgl 80 0 c4 c4.r C4 30 40 0 20 -262144 -1 -1 0 1;
 #X obj 267 130 tgl 80 0 c4sharp c4sharp.r Cd4 24 40 0 20 -228856 -1
 -1 0 1;
@@ -92,7 +92,7 @@
 #X obj 580 7 tgl 80 0 g5sharp-1 g5sharp-1.r Ab5 25 40 0 20 -228856
 -1 -1 0 1;
 #X obj 128 463 hradio 35 1 0 16 dzdazi step empty 0 -8 0 10 -262144
--1 -1 3;
+-1 -1 7;
 #X text 129 465 1;
 #X text 270 464 5;
 #X text 409 464 9;

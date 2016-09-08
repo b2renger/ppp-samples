@@ -1,4 +1,4 @@
-#N canvas 965 120 621 631 10;
+#N canvas 963 124 621 631 10;
 #X obj 98 98 delay;
 #X msg 98 118 0;
 #X obj 98 57 sel 1;
@@ -13,7 +13,6 @@
 #X obj 31 350 b;
 #X obj 33 378 s \$1.r;
 #X text 152 315 loop;
-#X obj 27 308 taptap_2 \$1 \$2;
 #X obj 24 273 spigot;
 #X obj 64 239 r write1;
 #X obj 222 383 s note-step1;
@@ -21,6 +20,7 @@
 -1;
 #X obj 98 370 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
+#X obj 27 308 taptap_2 \$1 \$2;
 #X connect 0 0 1 0;
 #X connect 1 0 4 0;
 #X connect 2 0 0 0;
@@ -30,12 +30,12 @@
 #X connect 5 0 0 1;
 #X connect 5 0 10 0;
 #X connect 6 0 7 0;
-#X connect 6 0 15 0;
+#X connect 6 0 14 0;
 #X connect 8 0 6 0;
 #X connect 11 0 12 0;
-#X connect 14 0 11 0;
 #X connect 14 0 17 0;
 #X connect 14 0 19 0;
-#X connect 15 0 14 0;
-#X connect 15 0 18 0;
-#X connect 16 0 15 1;
+#X connect 15 0 14 1;
+#X connect 19 0 11 0;
+#X connect 19 0 16 0;
+#X connect 19 0 18 0;

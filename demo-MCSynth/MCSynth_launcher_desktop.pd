@@ -1,4 +1,4 @@
-#N canvas 40 506 862 508 10;
+#N canvas 38 510 862 508 10;
 #X declare -path assets/MCSynth;
 #X declare -path ../../ppp-release/PdPartyPublisher-0.1.2/puredata/
 ;
@@ -12,6 +12,4 @@
 #X obj 21 195 mcsynth_audiocore;
 #X obj 21 176 mcsynth_synthcontrols;
 #X obj 24 131 mcsynth_pannel1;
-#X text 21 224 - save save save trouver un moyen de sauvegarder les
-taptap;
 #X text 27 271 - renommer le tout LooperSynth;
