@@ -1,0 +1,105 @@
+#N canvas 894 357 950 659 10;
+#X obj 616 79 loadbang;
+#X obj 616 130 select 0;
+#X msg 615 233 resize \$1;
+#X msg 616 154 100;
+#X obj 616 183 s \$0-size;
+#X obj 615 207 r \$0-size;
+#X obj 70 47 inlet;
+#X obj 70 389 select 1;
+#X obj 70 414 outlet;
+#X obj 165 46 inlet;
+#X msg 165 132 1;
+#X obj 248 185 s \$0-dump;
+#X obj 289 161 s \$0-clear;
+#X obj 331 139 s \$0-flip;
+#X obj 637 533 ==;
+#X obj 637 474 t a a;
+#X obj 637 365 r \$0-flip;
+#X obj 70 73 s \$0-tick;
+#X obj 70 309 r \$0-tick;
+#X obj 295 214 r \$0-tick;
+#X obj 742 435 r \$0-tick;
+#X obj 711 435 f;
+#X obj 637 389 route float;
+#X obj 711 411 b;
+#X text 628 341 Bonus feature: flip a value;
+#X obj 372 119 s \$0-set;
+#X obj 432 444 r \$0-set;
+#X msg 432 471 \$1 1;
+#X obj 165 72 route bang float dump clear flip set unset;
+#X obj 538 443 r \$0-unset;
+#X msg 538 470 \$1 0;
+#X obj 414 99 s \$0-unset;
+#X obj 330 444 r \$0-clear;
+#X msg 330 471 const 0;
+#X obj 206 94 t b f;
+#N canvas 172 83 586 377 LICENSE-GPL 0;
+#X text 57 88 This program is free software: you can redistribute it
+and/or modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation \, either version 3 of
+the License \, or (at your option) any later version.;
+#X text 58 168 This program is distributed in the hope that it will
+be useful \, but WITHOUT ANY WARRANTY \; without even the implied warranty
+of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+General Public License for more details.;
+#X text 57 261 You should have received a copy of the GNU General Public
+License along with this program. If not \, see <http://www.gnu.org/licenses/>.
+;
+#X text 61 54 Copyright (C) 2009 \, Reality Jockey Ltd.;
+#X text 60 325 See the file LICENSE.txt for the full license text.
+;
+#X restore 731 43 pd LICENSE-GPL;
+#X obj 616 103 f \$2;
+#X obj 615 258 s \$1-patt, f 10;
+#X obj 165 235 tabwrite \$1-patt;
+#X obj 70 336 tabread \$1-patt;
+#X obj 330 498 s \$1-patt;
+#X obj 432 498 s \$1-patt;
+#X obj 538 497 s \$1-patt;
+#X obj 637 563 tabwrite \$1-patt;
+#X obj 637 498 tabread \$1-patt;
+#X obj 616 284 table \$1-patt 16;
+#X text 311 16 warning ! modified version of taptap;
+#X obj 268 330 persist-table bank \$1-patt;
+#X obj 292 384 r init;
+#X connect 0 0 36 0;
+#X connect 1 0 3 0;
+#X connect 1 1 4 0;
+#X connect 2 0 37 0;
+#X connect 3 0 4 0;
+#X connect 5 0 2 0;
+#X connect 6 0 17 0;
+#X connect 7 0 8 0;
+#X connect 9 0 28 0;
+#X connect 10 0 38 0;
+#X connect 14 0 43 0;
+#X connect 15 0 44 0;
+#X connect 15 1 43 1;
+#X connect 16 0 22 0;
+#X connect 18 0 39 0;
+#X connect 19 0 38 1;
+#X connect 20 0 21 1;
+#X connect 21 0 15 0;
+#X connect 22 0 15 0;
+#X connect 22 1 23 0;
+#X connect 23 0 21 0;
+#X connect 26 0 27 0;
+#X connect 27 0 41 0;
+#X connect 28 0 10 0;
+#X connect 28 1 34 0;
+#X connect 28 2 11 0;
+#X connect 28 3 12 0;
+#X connect 28 4 13 0;
+#X connect 28 5 25 0;
+#X connect 28 6 31 0;
+#X connect 29 0 30 0;
+#X connect 30 0 42 0;
+#X connect 32 0 33 0;
+#X connect 33 0 40 0;
+#X connect 34 0 10 0;
+#X connect 34 1 38 1;
+#X connect 36 0 1 0;
+#X connect 39 0 7 0;
+#X connect 44 0 14 0;
+#X connect 48 0 33 0;
