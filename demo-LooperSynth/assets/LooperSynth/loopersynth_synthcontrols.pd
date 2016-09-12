@@ -1,4 +1,4 @@
-#N canvas 380 582 693 472 10;
+#N canvas 131 526 693 472 10;
 #X obj 21 203 hsl 170 40 0.01 1 0 0 env3a-amp-attack.s env3a-amp-attack.r
 AMP-ATTACK -2 -8 0 10 -228992 -1 -262144 4265 1;
 #X obj 21 266 hsl 170 40 0.01 1 0 0 env3d-amp-decay.s env3d-amp-decay.r
@@ -8,19 +8,19 @@ AMP-SUS -2 -8 0 10 -228992 -1 -262144 2518 1;
 #X obj 21 394 hsl 170 40 0.01 1 0 0 env3r-amp-release.s env3r-amp-release.r
 AMP-REL -2 -8 0 10 -228992 -1 -262144 2114 1;
 #X obj 242 203 hsl 170 40 0.01 1 0 0 osc1a.s osc1a.r OSC1-PW -2 -8
-0 10 -228992 -1 -262144 14615 1;
+0 10 -228992 -1 -262144 6684 1;
 #X obj 242 266 hsl 170 40 0.01 1 0 0 osc1b.s osc1b.r OSC2-PW -2 -8
-0 10 -228992 -1 -262144 10314 1;
+0 10 -228992 -1 -262144 905 1;
 #X obj 242 329 hsl 170 40 0.01 1 0 0 osc1c.s osc1c.r OSC1-PWM -2 -8
-0 10 -228992 -1 -262144 5071 1;
+0 10 -228992 -1 -262144 15287 1;
 #X obj 242 394 hsl 170 40 0.01 1 0 0 osc1d.s osc1d.r OSC2-PWM -2 -8
-0 10 -228992 -1 -262144 6281 1;
+0 10 -228992 -1 -262144 8432 1;
 #X obj 462 203 hsl 170 40 0.01 1 0 0 mod1a.s mod1a.r FILTER-AMT -2
 -8 0 10 -228992 -1 -262144 2114 1;
 #X obj 462 266 hsl 170 40 0.01 1 0 0 mod1b.s mod1b.r DETUNE -2 -8 0
-10 -228992 -1 -262144 3190 1;
+10 -228992 -1 -262144 8566 1;
 #X obj 462 329 hsl 170 40 0.01 1 0 0 mod1c.s mod1c.r SYNC-AMT -2 -8
-0 10 -228992 -1 -262144 1980 1;
+0 10 -228992 -1 -262144 11255 1;
 #X obj 462 394 hsl 170 40 0.01 1 0 0 mod3d.s mod3d.r VOLME -2 -8 0
 10 -228992 -1 -262144 9480 1;
 #X obj 18 137 taplist 170 35 synthpreset.r synthpreset.s synthpreset
@@ -28,21 +28,21 @@ FB-String-Brass1 Gentle-Sync RoughSync-Bass Thin-Short-Bass Dull-Brass
 Slow-Hollow Slow-Thin Bass-ic;
 #N canvas 1 97 450 300 misc_gui 0;
 #X obj 28 47 hsl 128 25 0 1 0 0 env1a-tone-attack.s env1a-tone-attack.r
-TONE-ATTACK -2 -8 0 10 -228992 -1 -262144 700 1;
+TONE-ATTACK -2 -8 0 10 -228992 -1 -262144 0 1;
 #X obj 29 87 hsl 128 25 0 1 0 0 env1d-tone-decay.s env1d-tone-decay.r
-TONE-DECAY -2 -8 0 10 -228992 -1 -262144 700 1;
+TONE-DECAY -2 -8 0 10 -228992 -1 -262144 12100 1;
 #X obj 29 127 hsl 128 25 0 1 0 0 env1s-tone-sustain.s env1s-tone-sustain.r
 TONE-SUS -2 -8 0 10 -228992 -1 -262144 1400 1;
 #X obj 30 166 hsl 128 25 0 1 0 0 env1r-tone-release.s env1r-tone-release.r
 TONE-REL -2 -8 0 10 -228992 -1 -262144 1900 1;
 #X obj 185 45 hsl 128 25 0 1 0 0 env2a-width-attack.s env2a-width-attack.r
-WIDTH-ATTACK -2 -8 0 10 -228992 -1 -262144 3800 1;
+WIDTH-ATTACK -2 -8 0 10 -228992 -1 -262144 1800 1;
 #X obj 186 85 hsl 128 25 0 1 0 0 env2d-width-decay.s env2d-width-decay.r
-WIDTH-DECAY -2 -8 0 10 -228992 -1 -262144 4300 1;
+WIDTH-DECAY -2 -8 0 10 -228992 -1 -262144 3200 1;
 #X obj 186 125 hsl 128 25 0 1 0 0 env2s-width-sustain.s env2s-width-sustain.r
-WIDTH-SUS -2 -8 0 10 -228992 -1 -262144 5100 1;
+WIDTH-SUS -2 -8 0 10 -228992 -1 -262144 1100 1;
 #X obj 187 164 hsl 128 25 0 1 0 0 env2r-width-release.s env2r-width-release.r
-WIDTH-REL -2 -8 0 10 -228992 -1 -262144 8100 1;
+WIDTH-REL -2 -8 0 10 -228992 -1 -262144 1100 1;
 #X restore 299 151 pd misc_gui;
 #X text 17 121 Factory_sounds;
 #X obj 17 58 tgl 40 0 train1 train1.r MarkovLearn 45 16 0 14 -262144

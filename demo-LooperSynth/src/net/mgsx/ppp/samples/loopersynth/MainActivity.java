@@ -41,7 +41,7 @@ public class MainActivity extends Activity {
         config.guiPatches.put("Controls", "LooperSynth/loopersynth_synthcontrols.pd");
         config.corePatches.add("LooperSynth/loopersynth_audiocore.pd");
         
-        config.presetsPaths.add("LooperSynth/presets");
+        config.presetsPaths.add("assets/LooperSynth/presets");
        
        
          

@@ -1,22 +1,29 @@
-#N canvas 1005 422 875 639 10;
+#N canvas 1013 197 875 771 10;
 #X obj 123 -3 inlet;
 #X obj 30 175 f \$2;
 #X obj 30 92 b;
 #X obj 30 260 outlet;
 #X obj 30 218 spigot;
-#X msg 418 89 clear;
-#X obj 431 55 r wordbutton-Synth-reset;
-#X obj 418 33 r reset.s;
-#X obj 370 150 r loop1;
+#X msg 617 -4 clear;
+#X obj 630 -38 r wordbutton-Synth-reset;
+#X obj 617 -60 r reset.s;
+#X obj 103 170 r loop1;
 #X obj 94 29 b;
 #X floatatom 47 43 5 0 0 0 - - -, f 5;
 #X obj 30 7 r step;
 #X obj 50 130 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X floatatom 113 234 5 0 0 0 - - -, f 5;
-#X obj 552 92 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 751 -1 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 30 68 rj/c_taptap \$1 16;
+#X obj 30 68 rj/c_taptap 16;
+#X msg 189 151 1 1 1 0 0 0 1 0 1 0 1 0 0 0 1 1;
+#X obj 553 -62 r save;
+#X msg 553 -38 dump;
+#X obj 442 92 persist-map bank \$1-patt.s \$1-patt.r;
+#X obj 186 196 s \$1-patt.s;
+#X obj 257 -48 r \$1-patt.r;
+#X obj 166 111 t b a;
 #X connect 0 0 9 0;
 #X connect 1 0 4 0;
 #X connect 1 0 13 0;
@@ -32,3 +39,10 @@
 #X connect 11 0 15 0;
 #X connect 14 0 5 0;
 #X connect 15 0 2 0;
+#X connect 15 1 22 0;
+#X connect 16 0 20 0;
+#X connect 17 0 18 0;
+#X connect 18 0 15 1;
+#X connect 21 0 15 1;
+#X connect 22 0 16 0;
+#X connect 22 1 16 0;

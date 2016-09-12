@@ -1,4 +1,4 @@
-#N canvas 34 518 862 508 10;
+#N canvas 30 526 862 508 10;
 #X declare -path ../../ppp-release/PdPartyPublisher-0.1.2/puredata/
 ;
 #X declare -path assets/LooperSynth;
@@ -13,8 +13,6 @@
 #X obj 21 176 loopersynth_synthcontrols;
 #X obj 21 195 loopersynth_audiocore;
 #X text 25 292 tester sauvegarde sous android avec debugger;
-#X text 25 255 - renommer le tout LooperSynth => dans eclipse il launch
-McSynth alors que tout est bon sinon;
 #X text 24 329 retroéclairage de l'initialisation n'est pas bon (write
 \, play \, loop) :/ et intialisation non plus d'ailleurs (nom de la
 preset chargé et son !);
