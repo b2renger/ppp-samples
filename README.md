@@ -1,5 +1,5 @@
 # ppp-samples
-samples of code for http://mgsx.ppp.net
+samples of code for http://ppp.mgsx.net
 
 
 ## How to use ?
